@@ -25,7 +25,7 @@ public class Tabungan {
     }
     
     public boolean ambilUang(int jumlah){
-        boolean status = this.saldo>jumlah;
+        boolean status = this.saldo>=jumlah;
         if(status){
             this.saldo-=jumlah;
             return status;
